@@ -1,13 +1,8 @@
-import { Component } from "react";
 import PropTypes from "prop-types";
 
-export class Filter extends Component {
-  state = {};
+export function Filter({handleFilterChange, filter}) {
 
-  render() {
-    const { handleFilterChange, filter } = this.props;
     return <input type="text" onChange={handleFilterChange} value={filter} />;
-  }
 }
 
 Filter.propTypes = {
